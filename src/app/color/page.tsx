@@ -47,7 +47,7 @@ const neutralColors = [
   },
   {
     name: "Pure White",
-    role: "Clean Surface & Cards",
+    role: "Clean Surfaces & Cards",
     hex: "#ffffff",
     rgb: "rgb(255, 255, 255)",
     cmyk: "0% 0% 0% 0%",
@@ -104,73 +104,73 @@ const colorPairings = [
     colorName: "PUAI Coral",
     hex: "#f03c4f",
     description:
-      "Expresses passion, forward movement, and bold human energy. Paired with warm, intimate macro portraits.",
+      "Primary brand color for key calls-to-action, badges, and warm editorial statements.",
     photoUrl: "/assets/images/puai-warm-portrait-gaze.jpg",
-    theme: "Human Energy & Executive Vision",
+    theme: "Brand Anchor & Energy",
   },
   {
     colorName: "Midnight Navy",
     hex: "#143d73",
     description:
-      "Grounds technical discipline, trust, and deep cognition. Paired with intense macro eye focus against rich studio tones.",
+      "Deep supporting accent for technical diagrams, structural data, and focused contrasts.",
     photoUrl: "/assets/images/puai-macro-eye-focus.jpg",
-    theme: "Technical Discipline & Cognitive Focus",
+    theme: "Technical Depth & Focus",
   },
   {
     colorName: "Marigold Yellow",
     hex: "#f5c814",
     description:
-      "Evokes optimism, clarity of thought, and breakthrough moments during intensive team collaboration.",
+      "High-energy highlight color for workshop callouts, badges, and interactive components.",
     photoUrl: "/assets/images/puai-collab-authentic.jpg",
-    theme: "Ideation & Breakthroughs",
+    theme: "Ideation & Highlights",
   },
   {
     colorName: "Neo-Mint",
     hex: "#4fedaa",
     description:
-      "Signifies iterative progress, verifiable business metrics, and raw organic human texture.",
+      "Fresh accent color for success indicators, adoption metrics, and progress tags.",
     photoUrl: "/assets/images/puai-human-texture.jpg",
-    theme: "Adoption & Organic Reality",
+    theme: "Adoption & Progress",
   },
 ];
 
 export default function ColorPage() {
   return (
     <div className="w-full">
-      {/* Editorial Hero Statement */}
-      <section className="bg-[#ffebee] border-b border-black/10 py-20 sm:py-28 px-6 sm:px-10">
+      {/* Hero */}
+      <section className="bg-[#ffebee] border-b border-black/10 py-16 sm:py-24 px-6 sm:px-10">
         <div className="max-w-6xl mx-auto">
           <ScrollReveal>
-            <span className="text-xs font-bold tracking-widest uppercase text-[#f03c4f] block mb-4">
+            <span className="text-xs font-bold tracking-widest uppercase text-[#f03c4f] block mb-3">
               Visual Identity / 03
             </span>
-            <h1 className="text-4xl sm:text-6xl font-bold tracking-tight text-[#20222b] max-w-4xl mb-6 leading-[1.1]">
-              Vibrant warmth anchored in grounded intelligence.
+            <h1 className="text-3xl sm:text-5xl font-bold tracking-tight text-[#20222b] max-w-3xl mb-4 leading-tight">
+              The Color System
             </h1>
-            <p className="text-lg sm:text-xl text-[#5d5d6b] max-w-3xl leading-relaxed">
-              Our color system rejects sterile, cold tech tropes. Rooted in warm Coral (#f03c4f) and rich Charcoal (#20222b), it introduces high-energy secondary accents that mirror the optimism and vitality of modern African innovation.
+            <p className="text-base sm:text-lg text-[#5d5d6b] max-w-2xl leading-relaxed">
+              Rooted in warm PUAI Coral (#f03c4f) and Dark Neutral (#20222b), supported by purposeful accents for data, UI states, and editorial highlights.
             </p>
           </ScrollReveal>
         </div>
       </section>
 
       {/* Primary Brand Color */}
-      <section className="py-20 sm:py-28 px-6 sm:px-10 max-w-7xl mx-auto">
+      <section className="py-16 sm:py-24 px-6 sm:px-10 max-w-7xl mx-auto">
         <ScrollReveal>
-          <div className="mb-10">
-            <span className="text-xs font-bold tracking-widest uppercase text-[#5d5d6b] block mb-2">
-              Primary Identity
+          <div className="mb-8">
+            <span className="text-xs font-bold tracking-widest uppercase text-[#5d5d6b] block mb-1">
+              Core
             </span>
-            <h2 className="text-3xl font-bold text-[#20222b] tracking-tight">
-              Core Color
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#20222b] tracking-tight">
+              Primary Brand Color
             </h2>
-            <p className="text-sm text-[#5d5d6b] mt-2 max-w-xl">
-              PUAI Coral is the single most recognizable visual signature of the brand.
+            <p className="text-sm text-[#5d5d6b] mt-1 max-w-xl">
+              PUAI Coral is the primary visual signature of the brand.
             </p>
           </div>
         </ScrollReveal>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
           {primaryColors.map((color, idx) => (
             <ScrollReveal key={idx} delay={0.1}>
               <ColorSwatch {...color} />
@@ -180,20 +180,20 @@ export default function ColorPage() {
 
         {/* Neutrals */}
         <ScrollReveal>
-          <div className="mb-10">
-            <span className="text-xs font-bold tracking-widest uppercase text-[#5d5d6b] block mb-2">
-              Foundation
+          <div className="mb-8">
+            <span className="text-xs font-bold tracking-widest uppercase text-[#5d5d6b] block mb-1">
+              Base
             </span>
             <h3 className="text-2xl sm:text-3xl font-bold text-[#20222b] tracking-tight">
-              Neutrals & Greys
+              Neutrals & Backgrounds
             </h3>
-            <p className="text-sm text-[#5d5d6b] mt-2 max-w-xl">
-              Grounded neutral tones used for typography, surface contrast, and soft editorial backgrounds.
+            <p className="text-sm text-[#5d5d6b] mt-1 max-w-xl">
+              Foundational tones for typography, borders, and background surfaces.
             </p>
           </div>
         </ScrollReveal>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mb-20">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
           {neutralColors.map((color, idx) => (
             <ScrollReveal key={idx} delay={idx * 0.05}>
               <ColorSwatch {...color} />
@@ -203,20 +203,20 @@ export default function ColorPage() {
 
         {/* Secondary Accents */}
         <ScrollReveal>
-          <div className="mb-10">
-            <span className="text-xs font-bold tracking-widest uppercase text-[#5d5d6b] block mb-2">
-              Expressive Accents
+          <div className="mb-8">
+            <span className="text-xs font-bold tracking-widest uppercase text-[#5d5d6b] block mb-1">
+              Accents
             </span>
             <h3 className="text-2xl sm:text-3xl font-bold text-[#20222b] tracking-tight">
               Secondary Accent Colors
             </h3>
-            <p className="text-sm text-[#5d5d6b] mt-2 max-w-xl">
-              Accent colors bring rhythm, categorization, and contextual warmth to infographics, tags, and campaign collateral.
+            <p className="text-sm text-[#5d5d6b] mt-1 max-w-xl">
+              Used for data visualization, category tags, and editorial highlights.
             </p>
           </div>
         </ScrollReveal>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 sm:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
           {secondaryColors.map((color, idx) => (
             <ScrollReveal key={idx} delay={idx * 0.05}>
               <ColorSwatch {...color} />
@@ -225,29 +225,29 @@ export default function ColorPage() {
         </div>
       </section>
 
-      {/* Matching Color to Imagery (Direct parallel to brand.dropbox.com) */}
-      <section className="py-20 sm:py-28 px-6 sm:px-10 bg-[#fafafa] border-y border-black/5">
+      {/* Color in Context */}
+      <section className="py-16 sm:py-24 px-6 sm:px-10 bg-[#fafafa] border-y border-black/5">
         <div className="max-w-7xl mx-auto">
           <ScrollReveal>
-            <div className="mb-14">
-              <span className="text-xs font-bold tracking-widest uppercase text-[#5d5d6b] block mb-2">
-                Contextual Harmony
+            <div className="mb-10">
+              <span className="text-xs font-bold tracking-widest uppercase text-[#5d5d6b] block mb-1">
+                Context
               </span>
-              <h3 className="text-3xl font-bold text-[#20222b] tracking-tight">
-                Matching Color to Imagery
+              <h3 className="text-2xl sm:text-3xl font-bold text-[#20222b] tracking-tight">
+                Color in Context
               </h3>
-              <p className="text-sm text-[#5d5d6b] mt-2 max-w-2xl">
-                Just as demonstrated on brand.dropbox.com, our secondary colors are not used arbitrarily—they are paired thoughtfully with photographic tones to create cohesive visual stories.
+              <p className="text-sm text-[#5d5d6b] mt-1 max-w-xl">
+                How our primary and secondary colors pair with photography and content.
               </p>
             </div>
           </ScrollReveal>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {colorPairings.map((pairing, idx) => (
               <ScrollReveal key={idx} delay={idx * 0.1}>
                 <div className="rounded-3xl overflow-hidden bg-white border border-black/10 shadow-sm group">
                   <div className="grid grid-cols-1 sm:grid-cols-12 h-full">
-                    {/* Color Bar / Accent Pill */}
+                    {/* Color Accent Bar */}
                     <div
                       className="sm:col-span-4 p-6 flex flex-col justify-between"
                       style={{ backgroundColor: pairing.hex }}
@@ -267,7 +267,7 @@ export default function ColorPage() {
 
                     {/* Paired Photo */}
                     <div className="sm:col-span-8 p-6 flex flex-col justify-between">
-                      <div className="aspect-[16/10] rounded-xl overflow-hidden mb-4 bg-black/5">
+                      <div className="aspect-[16/10] rounded-xl overflow-hidden mb-3 bg-black/5">
                         <img
                           src={pairing.photoUrl}
                           alt={pairing.colorName}
@@ -287,17 +287,17 @@ export default function ColorPage() {
       </section>
 
       {/* Palette Downloads */}
-      <section className="py-20 sm:py-28 px-6 sm:px-10 max-w-7xl mx-auto">
+      <section className="py-16 sm:py-24 px-6 sm:px-10 max-w-7xl mx-auto">
         <ScrollReveal>
-          <div className="text-center max-w-2xl mx-auto mb-14">
-            <span className="text-xs font-bold tracking-widest uppercase text-[#5d5d6b] block mb-2">
-              Downloads & Tokens
+          <div className="text-center max-w-2xl mx-auto mb-12">
+            <span className="text-xs font-bold tracking-widest uppercase text-[#5d5d6b] block mb-1">
+              Downloads
             </span>
-            <h3 className="text-3xl font-bold text-[#20222b] tracking-tight mb-4">
-              Download Palette Files
+            <h3 className="text-2xl sm:text-3xl font-bold text-[#20222b] tracking-tight mb-2">
+              Download Color Files
             </h3>
             <p className="text-sm text-[#5d5d6b]">
-              Seamlessly integrate PUAI colors into codebases, design systems, and creative tools.
+              Design tokens in JSON, CSS custom properties, and values cheat sheet.
             </p>
           </div>
         </ScrollReveal>
@@ -306,7 +306,7 @@ export default function ColorPage() {
           <ScrollReveal delay={0.1}>
             <DownloadCard
               title="Full Color Package"
-              description="Complete bundle including JSON tokens, CSS custom properties, and HEX/RGB/CMYK cheat sheet."
+              description="Complete bundle including JSON tokens, CSS custom properties, and values."
               fileName="puai-color-palette.zip"
               fileSize="4 KB"
               formats={["JSON", "CSS", "ZIP"]}
@@ -318,7 +318,7 @@ export default function ColorPage() {
           <ScrollReveal delay={0.2}>
             <DownloadCard
               title="Design Tokens (JSON)"
-              description="Structured design token tree formatted for Tailwind, Figma tokens, or headless design systems."
+              description="JSON format token definitions for Tailwind and UI libraries."
               fileName="puai-colors.json"
               fileSize="1.2 KB"
               formats={["JSON", "Tokens"]}
@@ -328,8 +328,8 @@ export default function ColorPage() {
 
           <ScrollReveal delay={0.3}>
             <DownloadCard
-              title="CSS Custom Properties"
-              description="Ready-to-use :root CSS variables for instant import into web projects and component libraries."
+              title="CSS Variables"
+              description=":root CSS custom properties for web applications."
               fileName="puai-colors.css"
               fileSize="0.8 KB"
               formats={["CSS", "Web"]}

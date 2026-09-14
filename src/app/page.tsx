@@ -7,7 +7,7 @@ const sections = [
     title: "Logo System",
     subtitle: "Identity & Construction",
     description:
-      "Explore the PUAI wordmark and icon mark, clear space rules, prohibited treatments, and vector downloads.",
+      "Wordmarks, icon marks, clear space rules, prohibited treatments, and vector downloads.",
     href: "/logo",
     badge: "Vector & PNG",
     preview: (
@@ -17,7 +17,7 @@ const sections = [
           alt="PUAI Wordmark"
           width={220}
           height={100}
-          className="w-auto h-16 object-contain"
+          className="w-auto h-14 object-contain"
         />
       </div>
     ),
@@ -26,7 +26,7 @@ const sections = [
     title: "Typography",
     subtitle: "Apfel Grotezk & Texturina",
     description:
-      "A dual-typeface system pairing utilitarian grotesque clarity with human editorial warmth. Includes interactive tester.",
+      "A dual-typeface system pairing functional grotesque clarity with warm editorial serif accents.",
     href: "/typography",
     badge: "OTF & TTF",
     preview: (
@@ -44,7 +44,7 @@ const sections = [
     title: "Color System",
     subtitle: "Core, Accents & Neutrals",
     description:
-      "Interactive palette anchored in vibrant PUAI Coral (#f03c4f), deep neutrals, and dynamic secondary accents.",
+      "A focused palette anchored by PUAI Coral (#f03c4f), deep charcoal, and high-energy accents.",
     href: "/color",
     badge: "HEX, RGB & Tokens",
     preview: (
@@ -61,7 +61,7 @@ const sections = [
     title: "Imagery",
     subtitle: "Brand in Use & Art Direction",
     description:
-      "Principles for authentic visual storytelling: raw human macro texture, intense focus, candid African collaboration, and practical tools.",
+      "Art direction principles: macro human texture, intense focus, candid collaboration, and real tools.",
     href: "/imagery",
     badge: "Photo Kit",
     preview: (
@@ -86,21 +86,48 @@ const sections = [
   },
 ];
 
+const brandInUseCards = [
+  {
+    title: "Stationery & Desk Suite",
+    category: "PRINT & COLLATERAL",
+    image: "/assets/in-use/Desk-Brand-Identity-Stationery-Free-psd-Mockup-Recovered.jpg",
+    description: "Business cards, correspondence sheets, and branded notebooks.",
+  },
+  {
+    title: "Human Discernment in AI",
+    category: "RAW HUMAN TEXTURE",
+    image: "/assets/images/puai-warm-portrait-gaze.jpg",
+    description: "Close-up macro photography capturing critical thought and real emotion.",
+  },
+  {
+    title: "Executive Masterclasses",
+    category: "CANDID COLLABORATION",
+    image: "/assets/images/puai-collab-authentic.jpg",
+    description: "Unscripted team sprints solving operational challenges in Nairobi.",
+  },
+  {
+    title: "Tote Bag & Summit Merch",
+    category: "MERCHANDISE & EVENTS",
+    image: "/assets/in-use/Tote Bag Mockup.jpg",
+    description: "Screen-printed cotton tote bag for workshops and brand events.",
+  },
+];
+
 export default function Home() {
   return (
     <div className="w-full min-h-screen">
-      {/* Editorial Hero Statement (Modeled after Dropbox brand hero) */}
-      <section className="relative w-full bg-[#ffebee] border-b border-black/10 py-24 sm:py-32 lg:py-40 px-6 sm:px-10 overflow-hidden">
+      {/* Hero Section */}
+      <section className="relative w-full bg-[#ffebee] border-b border-black/10 py-20 sm:py-28 lg:py-32 px-6 sm:px-10 overflow-hidden">
         <div className="max-w-6xl mx-auto">
           <ScrollReveal>
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/80 border border-black/5 text-xs font-bold tracking-wider uppercase text-[#f03c4f] mb-8">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/80 border border-black/5 text-xs font-bold tracking-wider uppercase text-[#f03c4f] mb-6">
               <span className="w-2 h-2 rounded-full bg-[#f03c4f] animate-pulse" />
-              PUAI Visual Identity System
+              PUAI Brand Guidelines
             </div>
           </ScrollReveal>
 
           <ScrollReveal delay={0.1}>
-            <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-[#20222b] max-w-5xl leading-[1.08] mb-10">
+            <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-[#20222b] max-w-5xl leading-[1.08] mb-8">
               Technology moves fast.{" "}
               <span className="font-editorial italic font-normal text-[#f03c4f] block sm:inline">
                 We teach the underlying human skills.
@@ -109,20 +136,19 @@ export default function Home() {
           </ScrollReveal>
 
           <ScrollReveal delay={0.2}>
-            <p className="text-lg sm:text-2xl text-[#20222b]/80 max-w-3xl leading-relaxed mb-12 font-editorial italic">
+            <p className="text-lg sm:text-2xl text-[#20222b]/80 max-w-3xl leading-relaxed mb-10 font-editorial italic">
               &ldquo;Most AI training is built for developers or designed in
               Silicon Valley. We teach clarity, context, and critical thinking,
-              so African teams can turn AI from an overhyped novelty into daily
-              leverage.&rdquo;
+              so African teams can turn AI into daily leverage.&rdquo;
             </p>
           </ScrollReveal>
 
           <ScrollReveal delay={0.3}>
-            <div className="flex flex-wrap items-center gap-4 pt-2">
+            <div className="flex flex-wrap items-center gap-4">
               <a
                 href="/assets/downloads/puai-full-brand-kit.zip"
                 download="puai-full-brand-kit.zip"
-                className="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-full bg-[#20222b] text-white hover:bg-[#f03c4f] transition-all duration-200 text-xs font-bold tracking-wider uppercase shadow-sm hover:shadow"
+                className="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-full bg-[#20222b] text-white hover:bg-[#f03c4f] transition-colors text-xs font-bold tracking-wider uppercase shadow-sm"
               >
                 <svg
                   className="w-4 h-4"
@@ -163,67 +189,63 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Purpose & Philosophy Narrative */}
-      <section className="py-20 sm:py-28 px-6 sm:px-10 max-w-7xl mx-auto">
+      {/* Purpose Statement */}
+      <section className="py-16 sm:py-24 px-6 sm:px-10 max-w-7xl mx-auto">
         <ScrollReveal>
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
             <div className="lg:col-span-4">
-              <span className="text-xs font-bold tracking-widest uppercase text-[#5d5d6b] block mb-3">
-                01 / The Core Purpose
+              <span className="text-xs font-bold tracking-widest uppercase text-[#5d5d6b] block mb-2">
+                01 / Purpose
               </span>
-              <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-[#20222b]">
-                Designed for clarity, discernment, and impact.
+              <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-[#20222b]">
+                Clarity, context, and critical thinking.
               </h2>
             </div>
-            <div className="lg:col-span-8 space-y-6 text-base sm:text-lg text-[#5d5d6b] leading-relaxed">
+            <div className="lg:col-span-8 space-y-4 text-base sm:text-lg text-[#5d5d6b] leading-relaxed">
               <p>
                 Between us, we bring over 20 years of experience leading
                 strategy, marketing, and operations across global and African
-                brands. We’ve watched teams try to learn AI in fragments,
-                cramming video tutorials between meetings, copying generic
-                prompts, and trying to force Western software models onto African
-                market realities.
+                brands. We work alongside technical partners who build the
+                systems, while our role is to remove the human barriers that
+                stop teams from getting real ROI from AI.
               </p>
               <p>
-                Our visual identity reflects this philosophy: unapologetically
-                functional, grounded in human craft, and vibrant with energy. It
-                pairs utilitarian typography with warm editorial flair, backed
-                by an intentional color system built for real-world digital and
-                physical applications.
+                Our visual identity reflects this: functional typography, warm
+                editorial accents, and an intentional color system built for
+                both digital interfaces and physical collateral.
               </p>
             </div>
           </div>
         </ScrollReveal>
       </section>
 
-      {/* Navigation Grid into Pillars */}
+      {/* Identity Pillars Grid */}
       <section className="py-16 sm:py-24 px-6 sm:px-10 bg-[#fafafa] border-t border-black/5">
         <div className="max-w-7xl mx-auto">
           <ScrollReveal>
-            <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-12 gap-4">
+            <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-10 gap-4">
               <div>
-                <span className="text-xs font-bold tracking-widest uppercase text-[#5d5d6b] block mb-2">
-                  02 / The Identity System
+                <span className="text-xs font-bold tracking-widest uppercase text-[#5d5d6b] block mb-1">
+                  02 / Identity System
                 </span>
-                <h3 className="text-2xl sm:text-4xl font-bold tracking-tight text-[#20222b]">
-                  Explore the Identity Pillars
+                <h3 className="text-2xl sm:text-3xl font-bold tracking-tight text-[#20222b]">
+                  Brand Pillars
                 </h3>
               </div>
               <p className="text-sm text-[#5d5d6b] max-w-md">
-                Every element has been crafted to communicate human discernment
-                in the era of automated intelligence.
+                Core guidelines for logos, typography, color, and photography.
               </p>
             </div>
           </ScrollReveal>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {sections.map((section, idx) => (
               <ScrollReveal key={section.href} delay={idx * 0.1}>
                 <Link
                   href={section.href}
-                  className="group flex flex-col rounded-3xl overflow-hidden bg-white border border-black/10 hover:border-black/30 transition-all duration-300 shadow-sm hover:shadow-xl"
+                  className="group flex flex-col rounded-3xl overflow-hidden bg-white border border-black/10 hover:border-black/30 transition-all duration-300 shadow-sm hover:shadow-lg"
                 >
-                  <div className="h-64 sm:h-72 w-full overflow-hidden relative">
+                  <div className="h-60 sm:h-64 w-full overflow-hidden relative">
                     {section.preview}
                     <div className="absolute top-4 right-4 z-10">
                       <span className="text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-white/90 text-[#20222b] shadow-sm backdrop-blur">
@@ -232,15 +254,15 @@ export default function Home() {
                     </div>
                   </div>
 
-                  <div className="p-8 flex flex-col justify-between flex-1">
+                  <div className="p-7 flex flex-col justify-between flex-1">
                     <div>
                       <span className="text-xs uppercase tracking-wider font-semibold text-[#f03c4f] block mb-1">
                         {section.subtitle}
                       </span>
-                      <h4 className="text-2xl font-bold text-[#20222b] mb-3 group-hover:text-[#f03c4f] transition-colors">
+                      <h4 className="text-xl font-bold text-[#20222b] mb-2 group-hover:text-[#f03c4f] transition-colors">
                         {section.title}
                       </h4>
-                      <p className="text-sm text-[#5d5d6b] leading-relaxed mb-6">
+                      <p className="text-sm text-[#5d5d6b] leading-relaxed mb-5">
                         {section.description}
                       </p>
                     </div>
@@ -269,83 +291,49 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Editorial In-Use Snapshot Strip */}
-      <section className="py-24 px-6 sm:px-10 max-w-7xl mx-auto">
+      {/* Brand in Practice Showcase */}
+      <section className="py-16 sm:py-24 px-6 sm:px-10 max-w-7xl mx-auto">
         <ScrollReveal>
-          <div className="text-center max-w-2xl mx-auto mb-16">
-            <span className="text-xs font-bold tracking-widest uppercase text-[#5d5d6b] block mb-2">
+          <div className="text-center max-w-2xl mx-auto mb-12">
+            <span className="text-xs font-bold tracking-widest uppercase text-[#5d5d6b] block mb-1">
               03 / Application
             </span>
-            <h3 className="text-3xl sm:text-4xl font-bold tracking-tight text-[#20222b] mb-4">
+            <h3 className="text-2xl sm:text-3xl font-bold tracking-tight text-[#20222b] mb-2">
               The Brand in Practice
             </h3>
-            <p className="text-base text-[#5d5d6b]">
-              A consistent visual voice across physical collateral, digital
-              platforms, and collaborative environments.
+            <p className="text-sm text-[#5d5d6b]">
+              Consistent visual voice across collateral, digital platforms, merchandise, and workshop settings.
             </p>
           </div>
         </ScrollReveal>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          <ScrollReveal delay={0.1}>
-            <div className="rounded-2xl overflow-hidden border border-black/10 bg-white group shadow-sm hover:shadow-md transition-shadow">
-              <div className="aspect-[4/3] overflow-hidden bg-black/5">
-                <img
-                  src="/assets/images/puai-warm-portrait-gaze.jpg"
-                  alt="Macro Human Texture and Discernment"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                />
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {brandInUseCards.map((card, idx) => (
+            <ScrollReveal key={idx} delay={idx * 0.1}>
+              <div className="rounded-2xl overflow-hidden border border-black/10 bg-white group shadow-sm hover:shadow-md transition-shadow flex flex-col h-full">
+                <div className="aspect-[4/3] overflow-hidden bg-black/5 relative">
+                  <img
+                    src={card.image}
+                    alt={card.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+                <div className="p-5 flex-1 flex flex-col justify-between">
+                  <div>
+                    <span className="text-[10px] font-mono font-bold text-[#f03c4f] block mb-1">
+                      {card.category}
+                    </span>
+                    <h4 className="text-sm font-bold text-[#20222b] mb-1">
+                      {card.title}
+                    </h4>
+                  </div>
+                  <p className="text-xs text-[#5d5d6b] leading-relaxed mt-2">
+                    {card.description}
+                  </p>
+                </div>
               </div>
-              <div className="p-5">
-                <span className="text-[11px] font-mono font-bold text-[#f03c4f] block mb-1">
-                  RAW HUMAN TEXTURE & DISCERNMENT
-                </span>
-                <p className="text-sm font-bold text-[#20222b]">
-                  Human Intuition, Oversight, and Critical Thinking in AI
-                </p>
-              </div>
-            </div>
-          </ScrollReveal>
-
-          <ScrollReveal delay={0.2}>
-            <div className="rounded-2xl overflow-hidden border border-black/10 bg-white group shadow-sm hover:shadow-md transition-shadow">
-              <div className="aspect-[4/3] overflow-hidden bg-black/5">
-                <img
-                  src="/assets/images/puai-collab-authentic.jpg"
-                  alt="Team Workshop Collaboration in Nairobi"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                />
-              </div>
-              <div className="p-5">
-                <span className="text-[11px] font-mono font-bold text-[#f03c4f] block mb-1">
-                  CANDID AFRICAN COLLABORATION
-                </span>
-                <p className="text-sm font-bold text-[#20222b]">
-                  Interactive AI Masterclasses & Sprints for Executive Teams
-                </p>
-              </div>
-            </div>
-          </ScrollReveal>
-
-          <ScrollReveal delay={0.3}>
-            <div className="rounded-2xl overflow-hidden border border-black/10 bg-white group shadow-sm hover:shadow-md transition-shadow">
-              <div className="aspect-[4/3] overflow-hidden bg-black/5">
-                <img
-                  src="/assets/images/puai-macro-eye-focus.jpg"
-                  alt="Active Cognition & Deep Focus"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                />
-              </div>
-              <div className="p-5">
-                <span className="text-[11px] font-mono font-bold text-[#f03c4f] block mb-1">
-                  COGNITIVE FOCUS & OVERSIGHT
-                </span>
-                <p className="text-sm font-bold text-[#20222b]">
-                  Developing Prompt Strategy and Verifiable Real-World ROI
-                </p>
-              </div>
-            </div>
-          </ScrollReveal>
+            </ScrollReveal>
+          ))}
         </div>
       </section>
     </div>

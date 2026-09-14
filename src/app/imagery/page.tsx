@@ -5,80 +5,58 @@ import DownloadCard from "@/components/DownloadCard";
 export const metadata = {
   title: "Imagery & Art Direction — PUAI Brand Guidelines",
   description:
-    "Photography principles, authentic storytelling, raw macro human texture, candid African collaboration, and reference image guidelines for PUAI.",
+    "Photography principles, macro human texture, candid African collaboration, and reference image guidelines for PUAI.",
 };
 
 const photoCategories = [
   {
     category: "Macro Human Texture & The Discerning Gaze",
-    headline: "Unfiltered humanity, intimate eye contact, and deep cognitive focus.",
+    headline: "Unfiltered human focus, eye contact, and raw skin texture.",
     description:
-      "High-detail macro portraits capturing the micro-expressions, skin texture, and intense focus of human discernment. These close-ups establish that technology is merely an amplifier for irreplaceable human intellect.",
+      "Close-up macro portraits highlighting human concentration, natural pores, and micro-expressions. Visual proof that human judgment remains the core of practical AI adoption.",
     photos: [
       {
         url: "/assets/images/puai-macro-eye-focus.jpg",
         filename: "PUAI_MACRO_COGNITION_01.JPG",
         caption:
-          "Extreme macro framing highlighting the brow, focused gaze, and deep cognitive intensity against a rich studio backdrop.",
-        tags: ["Macro Gaze", "Intense Focus", "Cognitive Detail"],
+          "Macro detail on brow and eye focus against rich studio backdrop, capturing cognitive focus.",
+        tags: ["Macro Detail", "Intense Focus", "Cognitive Detail"],
       },
       {
         url: "/assets/images/puai-warm-portrait-gaze.jpg",
         filename: "PUAI_WARM_PORTRAIT_GAZE_02.JPG",
         caption:
-          "Warm amber-lit close-up capturing direct eye contact, natural skin warmth, and un-airbrushed human authenticity.",
-        tags: ["Warm Amber Light", "Direct Gaze", "Raw Humanity"],
+          "Warm ambient lighting with direct eye contact and un-airbrushed skin texture.",
+        tags: ["Warm Light", "Direct Gaze", "Raw Humanity"],
       },
       {
         url: "/assets/images/puai-human-texture.jpg",
         filename: "PUAI_RAW_HUMAN_TEXTURE_03.JPG",
         caption:
-          "Macro profile celebrating organic skin texture, natural perspiration, and determined focus under authentic lighting.",
-        tags: ["Un-Retouched Texture", "Natural Pores", "Organic Grit"],
+          "Macro profile showing natural skin texture, perspiration, and determined focus under authentic lighting.",
+        tags: ["Unretouched", "Natural Texture", "Determination"],
       },
     ],
   },
   {
     category: "Candid Collaboration & Active Dialogue",
-    headline: "Real teams in unscripted, dynamic problem-solving.",
+    headline: "Real teams working through practical challenges.",
     description:
-      "Show cross-functional African teams actively working together—analyzing datasets, reviewing strategy frameworks, and huddling around laptops with papers in contemporary workspaces without artificial posing.",
+      "Cross-functional teams analyzing datasets, reviewing workflows, and collaborating naturally around laptops and papers in contemporary African workspaces.",
     photos: [
       {
         url: "/assets/images/puai-collab-authentic.jpg",
         filename: "PUAI_AFRICA_TEAM_COLLAB_04.JPG",
         caption:
-          "Cross-functional team reviewing prompt architecture and market datasets during an intensive executive sprint in Nairobi.",
-        tags: ["Candid Interaction", "Natural Light", "Modern & Cultural Attire"],
+          "Cross-functional team reviewing prompt architecture and market datasets during a sprint in Nairobi.",
+        tags: ["Candid Interaction", "Natural Light", "Cultural Attire"],
       },
-      {
-        url: "/assets/images/puai-studio-sprint.jpg",
-        filename: "PUAI_STUDIO_SPRINT_05.JPG",
-        caption:
-          "Product strategists evaluating operational workflows and automated output quality in an open collaborative studio.",
-        tags: ["Strategy Sprint", "Real Tools", "Dynamic Framing"],
-      },
-    ],
-  },
-  {
-    category: "Workspaces & Practical Environments",
-    headline: "Contemporary African innovation hubs and tactile artifacts.",
-    description:
-      "Capture the authentic texture of modern creative studios, tech hubs, and meeting spaces across the African continent—featuring real laptops, printed worksheets, and natural architectural light.",
-    photos: [
       {
         url: "/assets/images/puai-workspace-meeting.jpg",
-        filename: "PUAI_WORKSPACE_INTERIOR_06.JPG",
+        filename: "PUAI_WORKSPACE_INTERIOR_05.JPG",
         caption:
-          "Natural daylight and open architectures prioritizing human communication and debate over sterile hardware.",
-        tags: ["Open Architecture", "Modern Hub", "Soft Daylight"],
-      },
-      {
-        url: "/assets/images/puai-analyst-dialogue.jpg",
-        filename: "PUAI_ANALYST_DIALOGUE_07.JPG",
-        caption:
-          "Interactive breakout session exploring conversational intelligence and agentic tool adoption for enterprise workflows.",
-        tags: ["Pair Analysis", "Screen Review", "Hands-On Practice"],
+          "Product strategists evaluating operational workflows and automated output quality in an open studio.",
+        tags: ["Strategy Sprint", "Real Tools", "Dynamic Framing"],
       },
     ],
   },
@@ -92,15 +70,10 @@ export default function ImageryPage() {
       description:
         "Frame subjects in natural or warm studio light with visible skin texture, authentic eye contact, and unscripted collaborative engagement.",
       renderVisual: (
-        <div className="w-full h-full relative overflow-hidden grid grid-cols-2">
+        <div className="w-full h-full relative overflow-hidden">
           <img
             src="/assets/images/puai-warm-portrait-gaze.jpg"
             alt="Authentic Macro Human Gaze"
-            className="w-full h-full object-cover"
-          />
-          <img
-            src="/assets/images/puai-collab-authentic.jpg"
-            alt="Authentic African Team Collaboration"
             className="w-full h-full object-cover"
           />
         </div>
@@ -108,7 +81,7 @@ export default function ImageryPage() {
     },
     {
       type: "dont" as const,
-      title: "Synthetic Clichés & Artificial Poses",
+      title: "Synthetic Clichés & Staged Posing",
       description:
         "Never use generic sci-fi glowing holograms, robot handshakes, or stiff corporate models smiling unnaturally into the camera with heavy airbrushing.",
       renderVisual: (
@@ -126,40 +99,40 @@ export default function ImageryPage() {
   return (
     <div className="w-full">
       {/* Editorial Hero Statement */}
-      <section className="bg-[#ffebee] border-b border-black/10 py-20 sm:py-28 px-6 sm:px-10">
+      <section className="bg-[#ffebee] border-b border-black/10 py-16 sm:py-24 px-6 sm:px-10">
         <div className="max-w-6xl mx-auto">
           <ScrollReveal>
-            <span className="text-xs font-bold tracking-widest uppercase text-[#f03c4f] block mb-4">
+            <span className="text-xs font-bold tracking-widest uppercase text-[#f03c4f] block mb-3">
               Visual Identity / 04
             </span>
-            <h1 className="text-4xl sm:text-6xl font-bold tracking-tight text-[#20222b] max-w-4xl mb-6 leading-[1.1]">
-              Raw human texture, intense focus, and authentic African collaboration.
+            <h1 className="text-3xl sm:text-5xl font-bold tracking-tight text-[#20222b] max-w-4xl mb-4 leading-tight">
+              Imagery & Art Direction
             </h1>
-            <p className="text-lg sm:text-xl text-[#5d5d6b] max-w-3xl leading-relaxed">
-              We reject the cold, robotic tropes of generic AI marketing. Our photography centers on real professionals exercising critical judgment—captured through extreme macro detail, raw skin texture, direct eye contact, and unscripted teamwork in contemporary African hubs.
+            <p className="text-base sm:text-lg text-[#5d5d6b] max-w-2xl leading-relaxed">
+              We reject generic robot graphics and airbrushed stock. Our photography centers on real professionals exercising critical judgment—captured through macro skin texture, direct eye contact, and candid teamwork in African hubs.
             </p>
           </ScrollReveal>
         </div>
       </section>
 
-      {/* Hero Visual Anchor Duo (Leading with Macro Texture & Focus) */}
+      {/* Hero Visual Anchor Duo */}
       <section className="py-16 sm:py-24 px-6 sm:px-10 max-w-7xl mx-auto">
         <ScrollReveal>
-          <div className="mb-12">
-            <span className="text-xs font-mono font-bold text-[#f03c4f] uppercase tracking-wider block mb-2">
+          <div className="mb-10">
+            <span className="text-xs font-mono font-bold text-[#f03c4f] uppercase tracking-wider block mb-1">
               Visual Tenets
             </span>
-            <h2 className="text-3xl sm:text-4xl font-bold text-[#20222b] tracking-tight">
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#20222b] tracking-tight">
               The Two Anchors of PUAI Photography
             </h2>
-            <p className="text-sm text-[#5d5d6b] mt-2 max-w-2xl">
-              PUAI imagery operates on a deliberate balance: the intimate, high-texture intensity of the individual thinker paired with the dynamic energy of collective African innovation.
+            <p className="text-sm text-[#5d5d6b] mt-1 max-w-xl">
+              Balancing the intimate macro focus of individual discernment with the dynamic energy of collective teamwork.
             </p>
           </div>
         </ScrollReveal>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-20">
-          {/* Tenet 1: The Individual (Macro Texture & Focus) */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-16">
+          {/* Tenet 1: The Individual */}
           <ScrollReveal delay={0.1}>
             <div className="rounded-3xl overflow-hidden bg-[#fafafa] border border-black/10 flex flex-col h-full shadow-sm hover:shadow-md transition-shadow">
               <div className="aspect-[4/3] overflow-hidden relative group bg-black/5 grid grid-cols-2 gap-1 p-1 bg-[#20222b]">
@@ -179,35 +152,35 @@ export default function ImageryPage() {
                 </div>
                 <div className="absolute top-4 left-4 z-10">
                   <span className="text-[11px] font-mono font-bold uppercase tracking-wider bg-white/95 text-[#20222b] px-3 py-1 rounded-full shadow-sm backdrop-blur">
-                    Pillar 01 / Macro Humanity & Focus
+                    01 / Macro Texture & Focus
                   </span>
                 </div>
               </div>
-              <div className="p-8 flex-1 flex flex-col justify-between">
+              <div className="p-7 flex-1 flex flex-col justify-between">
                 <div>
-                  <h3 className="text-2xl font-bold text-[#20222b] mb-3">
+                  <h3 className="text-xl font-bold text-[#20222b] mb-2">
                     Raw Humanity & The Discerning Gaze
                   </h3>
-                  <p className="text-sm text-[#5d5d6b] leading-relaxed mb-6">
-                    Close-up macro framing celebrating un-airbrushed skin texture, perspiration, and intense focus. It serves as a visual declaration: technology provides the leverage, but human discernment and lived reality remain the core.
+                  <p className="text-sm text-[#5d5d6b] leading-relaxed mb-5">
+                    Close-up macro framing celebrating un-airbrushed skin texture, perspiration, and intense focus. It serves as a reminder that human discernment is the core of AI adoption.
                   </p>
                 </div>
                 <div className="flex flex-wrap gap-2 pt-4 border-t border-black/5">
                   <span className="text-[11px] font-mono bg-white px-2.5 py-1 rounded border border-black/10 text-[#20222b]">
-                    ✓ Visible Skin Pores & Texture
+                    ✓ Visible Skin Texture
                   </span>
                   <span className="text-[11px] font-mono bg-white px-2.5 py-1 rounded border border-black/10 text-[#20222b]">
                     ✓ Intense Eye Contact
                   </span>
                   <span className="text-[11px] font-mono bg-white px-2.5 py-1 rounded border border-black/10 text-[#20222b]">
-                    ✓ Zero Synthetic Airbrushing
+                    ✓ Zero Airbrushing
                   </span>
                 </div>
               </div>
             </div>
           </ScrollReveal>
 
-          {/* Tenet 2: The Collective (Candid Collaboration) */}
+          {/* Tenet 2: The Collective */}
           <ScrollReveal delay={0.2}>
             <div className="rounded-3xl overflow-hidden bg-[#fafafa] border border-black/10 flex flex-col h-full shadow-sm hover:shadow-md transition-shadow">
               <div className="aspect-[4/3] overflow-hidden relative group bg-black/5">
@@ -218,17 +191,17 @@ export default function ImageryPage() {
                 />
                 <div className="absolute top-4 left-4">
                   <span className="text-[11px] font-mono font-bold uppercase tracking-wider bg-white/95 text-[#20222b] px-3 py-1 rounded-full shadow-sm backdrop-blur">
-                    Pillar 02 / Candid African Collaboration
+                    02 / Candid African Collaboration
                   </span>
                 </div>
               </div>
-              <div className="p-8 flex-1 flex flex-col justify-between">
+              <div className="p-7 flex-1 flex flex-col justify-between">
                 <div>
-                  <h3 className="text-2xl font-bold text-[#20222b] mb-3">
+                  <h3 className="text-xl font-bold text-[#20222b] mb-2">
                     Unscripted Team Dynamics
                   </h3>
-                  <p className="text-sm text-[#5d5d6b] leading-relaxed mb-6">
-                    Real teams in modern African tech spaces—unscripted, dynamic, and working through genuine operational challenges. Natural daylight, diverse cultural attire, and practical tools over staged corporate poses.
+                  <p className="text-sm text-[#5d5d6b] leading-relaxed mb-5">
+                    Real teams in modern African tech spaces working through genuine operational challenges. Natural daylight, diverse cultural attire, and practical tools over staged corporate poses.
                   </p>
                 </div>
                 <div className="flex flex-wrap gap-2 pt-4 border-t border-black/5">
@@ -239,7 +212,7 @@ export default function ImageryPage() {
                     ✓ Unposed Team Dialogue
                   </span>
                   <span className="text-[11px] font-mono bg-white px-2.5 py-1 rounded border border-black/10 text-[#20222b]">
-                    ✓ Real Hardware & Papers
+                    ✓ Real Tools & Papers
                   </span>
                 </div>
               </div>
@@ -247,58 +220,58 @@ export default function ImageryPage() {
           </ScrollReveal>
         </div>
 
-        {/* Core Principles Breakdown */}
+        {/* Core Principles */}
         <ScrollReveal>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-24">
-            <div className="p-8 rounded-3xl bg-[#fafafa] border border-black/5">
-              <span className="text-xs font-mono font-bold text-[#f03c4f] block mb-3">
-                01 / MACRO TEXTURE & GAZE
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20">
+            <div className="p-7 rounded-3xl bg-[#fafafa] border border-black/5">
+              <span className="text-xs font-mono font-bold text-[#f03c4f] block mb-2">
+                01 / MACRO TEXTURE
               </span>
-              <h3 className="text-xl font-bold text-[#20222b] mb-3">
+              <h3 className="text-lg font-bold text-[#20222b] mb-2">
                 Unfiltered Authenticity
               </h3>
               <p className="text-sm text-[#5d5d6b] leading-relaxed">
-                Embrace natural skin tones, lighting highlights, and detailed macro textures. Never airbrush away the genuine human qualities of our subjects.
+                Natural skin tones, lighting highlights, and detailed macro textures. Never airbrush away genuine human qualities.
               </p>
             </div>
 
-            <div className="p-8 rounded-3xl bg-[#fafafa] border border-black/5">
-              <span className="text-xs font-mono font-bold text-[#f03c4f] block mb-3">
+            <div className="p-7 rounded-3xl bg-[#fafafa] border border-black/5">
+              <span className="text-xs font-mono font-bold text-[#f03c4f] block mb-2">
                 02 / CANDID COLLABORATION
               </span>
-              <h3 className="text-xl font-bold text-[#20222b] mb-3">
+              <h3 className="text-lg font-bold text-[#20222b] mb-2">
                 Action Over Posing
               </h3>
               <p className="text-sm text-[#5d5d6b] leading-relaxed">
-                Subjects must look engaged in real problem-solving: pointing at diagrams, analyzing prompt outputs, and engaging in unscripted debate.
+                Subjects engaged in real work: pointing at diagrams, analyzing prompt outputs, and unscripted debate.
               </p>
             </div>
 
-            <div className="p-8 rounded-3xl bg-[#fafafa] border border-black/5">
-              <span className="text-xs font-mono font-bold text-[#f03c4f] block mb-3">
+            <div className="p-7 rounded-3xl bg-[#fafafa] border border-black/5">
+              <span className="text-xs font-mono font-bold text-[#f03c4f] block mb-2">
                 03 / ZERO SCI-FI TROPES
               </span>
-              <h3 className="text-xl font-bold text-[#20222b] mb-3">
-                Real Tools, Not Sci-Fi
+              <h3 className="text-lg font-bold text-[#20222b] mb-2">
+                Real Tools Only
               </h3>
               <p className="text-sm text-[#5d5d6b] leading-relaxed">
-                Show laptops, printed frameworks, notebooks, and markers. Never feature floating holograms, glowing circuits, or robotic hands.
+                Show laptops, printed frameworks, notebooks, and markers. Never feature floating holograms, glowing circuits, or robot hands.
               </p>
             </div>
           </div>
         </ScrollReveal>
 
-        {/* Curated Categories (Re-positioned with Macro Texture as Category 01) */}
-        <div className="space-y-24">
+        {/* Curated Categories */}
+        <div className="space-y-20">
           {photoCategories.map((group, groupIdx) => (
-            <div key={groupIdx} className="space-y-8">
+            <div key={groupIdx} className="space-y-6">
               <ScrollReveal>
-                <div className="border-b border-black/10 pb-6 flex flex-col sm:flex-row sm:items-baseline justify-between gap-2">
+                <div className="border-b border-black/10 pb-5 flex flex-col sm:flex-row sm:items-baseline justify-between gap-2">
                   <div>
                     <span className="text-xs font-bold uppercase tracking-wider text-[#f03c4f] block mb-1">
                       Category 0{groupIdx + 1}
                     </span>
-                    <h3 className="text-2xl sm:text-3xl font-bold text-[#20222b]">
+                    <h3 className="text-2xl font-bold text-[#20222b]">
                       {group.category}
                     </h3>
                   </div>
@@ -310,10 +283,8 @@ export default function ImageryPage() {
 
               <div
                 className={`grid grid-cols-1 ${
-                  group.photos.length === 3
-                    ? "lg:grid-cols-3"
-                    : "lg:grid-cols-2"
-                } gap-8`}
+                  group.photos.length === 3 ? "lg:grid-cols-3" : "lg:grid-cols-2"
+                } gap-6`}
               >
                 {group.photos.map((item, photoIdx) => (
                   <ScrollReveal key={photoIdx} delay={photoIdx * 0.1}>
@@ -327,8 +298,7 @@ export default function ImageryPage() {
                       </div>
                       <div className="p-6 flex-1 flex flex-col justify-between">
                         <div>
-                          {/* Dropbox-style authentic filename label */}
-                          <div className="flex items-center justify-between mb-3">
+                          <div className="flex items-center justify-between mb-2.5">
                             <span className="text-[11px] font-mono font-bold text-[#20222b] bg-black/[0.04] px-2.5 py-1 rounded">
                               {item.filename}
                             </span>
@@ -336,7 +306,7 @@ export default function ImageryPage() {
                               Approved Reference
                             </span>
                           </div>
-                          <p className="text-sm text-[#5d5d6b] leading-relaxed mb-4">
+                          <p className="text-sm text-[#5d5d6b] leading-relaxed mb-3">
                             {item.caption}
                           </p>
                         </div>
@@ -361,18 +331,18 @@ export default function ImageryPage() {
       </section>
 
       {/* Photography Do's and Don'ts */}
-      <section className="py-20 sm:py-28 px-6 sm:px-10 bg-[#fafafa] border-y border-black/5">
+      <section className="py-16 sm:py-24 px-6 sm:px-10 bg-[#fafafa] border-y border-black/5">
         <div className="max-w-7xl mx-auto">
           <ScrollReveal>
-            <div className="mb-14">
-              <span className="text-xs font-bold tracking-widest uppercase text-[#5d5d6b] block mb-2">
-                Art Direction Standards
+            <div className="mb-10">
+              <span className="text-xs font-bold tracking-widest uppercase text-[#5d5d6b] block mb-1">
+                Standards
               </span>
-              <h3 className="text-3xl font-bold text-[#20222b] tracking-tight">
+              <h3 className="text-2xl sm:text-3xl font-bold text-[#20222b] tracking-tight">
                 Imagery Do&apos;s and Don&apos;ts
               </h3>
-              <p className="text-sm text-[#5d5d6b] mt-2 max-w-xl">
-                Maintain visual credibility by steering clear of generic stock tropes and honoring authentic working habits.
+              <p className="text-sm text-[#5d5d6b] mt-1 max-w-xl">
+                Maintain credibility by steering clear of generic stock tropes and honoring authentic working habits.
               </p>
             </div>
           </ScrollReveal>
@@ -383,27 +353,27 @@ export default function ImageryPage() {
         </div>
       </section>
 
-      {/* Imagery Kit Download */}
-      <section className="py-20 sm:py-28 px-6 sm:px-10 max-w-7xl mx-auto">
+      {/* Reference Kit Download */}
+      <section className="py-16 sm:py-24 px-6 sm:px-10 max-w-7xl mx-auto">
         <ScrollReveal>
-          <div className="text-center max-w-2xl mx-auto mb-14">
-            <span className="text-xs font-bold tracking-widest uppercase text-[#5d5d6b] block mb-2">
-              Reference Assets
+          <div className="text-center max-w-2xl mx-auto mb-12">
+            <span className="text-xs font-bold tracking-widest uppercase text-[#5d5d6b] block mb-1">
+              Downloads
             </span>
-            <h3 className="text-3xl font-bold text-[#20222b] tracking-tight mb-4">
+            <h3 className="text-2xl sm:text-3xl font-bold text-[#20222b] tracking-tight mb-2">
               Download Approved Reference Kit
             </h3>
             <p className="text-sm text-[#5d5d6b]">
-              Access the curated moodboard, art direction guidelines, and sample photography package.
+              Curated moodboard, art direction guidelines, and photography package.
             </p>
           </div>
         </ScrollReveal>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
           <ScrollReveal delay={0.1}>
             <DownloadCard
               title="Full Brand Kit"
-              description="Download all PUAI brand identity files: official vector logos, brand fonts, and color token files."
+              description="Vector logos, brand fonts, color tokens, and art direction guide."
               fileName="puai-full-brand-kit.zip"
               fileSize="828 KB"
               formats={["LOGOS", "FONTS", "COLORS"]}
@@ -415,7 +385,7 @@ export default function ImageryPage() {
           <ScrollReveal delay={0.2}>
             <DownloadCard
               title="Color & Typography Package"
-              description="Apfel Grotezk, Texturina Italic, and complete JSON/CSS color palette definitions."
+              description="Apfel Grotezk, Texturina Italic, and complete JSON/CSS color definitions."
               fileName="puai-fonts.zip"
               fileSize="384 KB"
               formats={["FONTS", "OTF", "TTF"]}
