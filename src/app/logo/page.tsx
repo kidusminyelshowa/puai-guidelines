@@ -72,31 +72,31 @@ const inUseMockups = [
   {
     title: "Stationery & Desk Suite",
     category: "Print & Collateral",
-    image: "/assets/in-use/Desk-Brand-Identity-Stationery-Free-psd-Mockup-Recovered.jpg",
+    image: "/assets/in-use/desk-stationery-mockup.jpg",
     description: "Business cards, correspondence sheets, and branded notebooks.",
   },
   {
     title: "Tote Bag & Merchandise",
     category: "Apparel & Events",
-    image: "/assets/in-use/Tote Bag Mockup.jpg",
+    image: "/assets/in-use/tote-bag-mockup.jpg",
     description: "Screen-printed natural cotton tote bag for summits and workshops.",
   },
   {
     title: "Brand Identity Framework",
     category: "System Overview",
-    image: "/assets/in-use/Artboard 9.jpg",
+    image: "/assets/in-use/artboard-09.jpg",
     description: "Comprehensive visual identity framework and mark system.",
   },
   {
     title: "Editorial & Publication",
     category: "Print Design",
-    image: "/assets/in-use/01.jpg",
+    image: "/assets/in-use/brand-application-01.jpg",
     description: "Course materials, masterclass booklets, and executive briefing folders.",
   },
   {
     title: "Digital & Spatial Brand In-Use",
     category: "Digital & Environmental",
-    image: "/assets/in-use/2.jpg",
+    image: "/assets/in-use/brand-application-02.jpg",
     description: "Modern brand placement across physical spaces and digital hardware.",
   },
 ];

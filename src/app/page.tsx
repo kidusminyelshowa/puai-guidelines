@@ -90,31 +90,31 @@ const brandInUseCards = [
   {
     title: "Stationery & Desk Suite",
     category: "PRINT & COLLATERAL",
-    image: "/assets/in-use/Desk-Brand-Identity-Stationery-Free-psd-Mockup-Recovered.jpg",
+    image: "/assets/in-use/desk-stationery-mockup.jpg",
     description: "Business cards, correspondence sheets, and branded notebooks.",
   },
   {
     title: "Tote Bag & Summit Merch",
     category: "MERCHANDISE & EVENTS",
-    image: "/assets/in-use/Tote Bag Mockup.jpg",
+    image: "/assets/in-use/tote-bag-mockup.jpg",
     description: "Screen-printed cotton tote bag for workshops and brand events.",
   },
   {
     title: "Identity System Framework",
     category: "SYSTEM OVERVIEW",
-    image: "/assets/in-use/Artboard 9.jpg",
+    image: "/assets/in-use/artboard-09.jpg",
     description: "Brand identity architecture and visual balance.",
   },
   {
     title: "Editorial Collateral",
     category: "PRINT DESIGN",
-    image: "/assets/in-use/01.jpg",
+    image: "/assets/in-use/brand-application-01.jpg",
     description: "Course booklets, masterclass materials, and executive folders.",
   },
   {
     title: "Spatial & Hardware Display",
     category: "ENVIRONMENTAL",
-    image: "/assets/in-use/2.jpg",
+    image: "/assets/in-use/brand-application-02.jpg",
     description: "Brand presence across hardware and workshop environments.",
   },
   {
