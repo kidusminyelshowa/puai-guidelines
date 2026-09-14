@@ -104,27 +104,24 @@ const colorPairings = [
     colorName: "PUAI Coral",
     hex: "#f03c4f",
     description:
-      "Expresses passion, forward movement, and bold executive action. Paired with focused collaborative photography.",
-    photoUrl:
-      "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80",
+      "Expresses passion, forward movement, and bold executive action. Paired with candid collaborative photography.",
+    photoUrl: "/assets/images/puai-collab-authentic.jpg",
     theme: "Executive Strategy & Action",
   },
   {
     colorName: "Midnight Navy",
     hex: "#143d73",
     description:
-      "Grounds technical discipline, trust, and deep infrastructure. Paired with focused engineering environments.",
-    photoUrl:
-      "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=800&q=80",
-    theme: "Technical Discipline & Trust",
+      "Grounds technical discipline, trust, and human oversight. Paired with raw human texture and deep focus portraits.",
+    photoUrl: "/assets/images/puai-human-texture.jpg",
+    theme: "Technical Discipline & Human Discernment",
   },
   {
     colorName: "Marigold Yellow",
     hex: "#f5c814",
     description:
       "Evokes optimism, clarity of thought, and breakthrough moments during intensive team workshops.",
-    photoUrl:
-      "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80",
+    photoUrl: "/assets/images/puai-studio-sprint.jpg",
     theme: "Ideation & Breakthroughs",
   },
   {
@@ -132,8 +129,7 @@ const colorPairings = [
     hex: "#4fedaa",
     description:
       "Signifies iterative progress, verifiable business metrics, and human-led technological adoption.",
-    photoUrl:
-      "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=800&q=80",
+    photoUrl: "/assets/images/puai-focus-portrait.jpg",
     theme: "Adoption & Continuous Growth",
   },
 ];

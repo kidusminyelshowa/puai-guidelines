@@ -61,19 +61,19 @@ const sections = [
     title: "Imagery",
     subtitle: "Brand in Use & Art Direction",
     description:
-      "Principles for authentic visual storytelling: real teams, natural light, candid collaboration, and African market contexts.",
+      "Principles for authentic visual storytelling: candid African collaboration, raw human texture, natural light, and practical tools.",
     href: "/imagery",
     badge: "Photo Kit",
     preview: (
       <div className="w-full h-full relative overflow-hidden group-hover:scale-105 transition-transform duration-500">
         <img
-          src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=800&q=80"
-          alt="PUAI Team Collaboration"
+          src="/assets/images/puai-collab-authentic.jpg"
+          alt="PUAI Team Collaboration in Nairobi"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-4">
           <span className="text-white text-xs font-mono uppercase tracking-wider">
-            Brand in Use
+            Brand in Use / Grounded
           </span>
         </div>
       </div>
@@ -283,17 +283,17 @@ export default function Home() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           <ScrollReveal delay={0.1}>
-            <div className="rounded-2xl overflow-hidden border border-black/10 bg-white group">
-              <div className="aspect-[4/3] overflow-hidden">
+            <div className="rounded-2xl overflow-hidden border border-black/10 bg-white group shadow-sm hover:shadow-md transition-shadow">
+              <div className="aspect-[4/3] overflow-hidden bg-black/5">
                 <img
-                  src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80"
-                  alt="Team Workshop"
+                  src="/assets/images/puai-collab-authentic.jpg"
+                  alt="Team Workshop Collaboration"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
               <div className="p-5">
-                <span className="text-[11px] font-mono text-[#5d5d6b] block mb-1">
-                  WORKSHOPS & TRAINING
+                <span className="text-[11px] font-mono font-bold text-[#f03c4f] block mb-1">
+                  WORKSHOPS & ACTIVE DIALOGUE
                 </span>
                 <p className="text-sm font-bold text-[#20222b]">
                   Interactive AI Masterclasses for Executive Teams
@@ -303,36 +303,36 @@ export default function Home() {
           </ScrollReveal>
 
           <ScrollReveal delay={0.2}>
-            <div className="rounded-2xl overflow-hidden border border-black/10 bg-white group">
-              <div className="aspect-[4/3] overflow-hidden">
+            <div className="rounded-2xl overflow-hidden border border-black/10 bg-white group shadow-sm hover:shadow-md transition-shadow">
+              <div className="aspect-[4/3] overflow-hidden bg-black/5">
                 <img
-                  src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=800&q=80"
-                  alt="Individual Mentorship"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  src="/assets/images/puai-human-texture.jpg"
+                  alt="Macro Human Texture and Discernment"
+                  className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
               <div className="p-5">
-                <span className="text-[11px] font-mono text-[#5d5d6b] block mb-1">
-                  HUMAN DISCERNMENT
+                <span className="text-[11px] font-mono font-bold text-[#f03c4f] block mb-1">
+                  RAW HUMAN TEXTURE & FOCUS
                 </span>
                 <p className="text-sm font-bold text-[#20222b]">
-                  Developing Prompt Strategy and Critical Evaluation
+                  Human Discernment, Intuition, and Critical Thinking in AI
                 </p>
               </div>
             </div>
           </ScrollReveal>
 
           <ScrollReveal delay={0.3}>
-            <div className="rounded-2xl overflow-hidden border border-black/10 bg-white group">
-              <div className="aspect-[4/3] overflow-hidden">
+            <div className="rounded-2xl overflow-hidden border border-black/10 bg-white group shadow-sm hover:shadow-md transition-shadow">
+              <div className="aspect-[4/3] overflow-hidden bg-black/5">
                 <img
-                  src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80"
-                  alt="Digital Intelligence"
+                  src="/assets/images/puai-focus-portrait.jpg"
+                  alt="Executive Leadership and Strategy"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
               <div className="p-5">
-                <span className="text-[11px] font-mono text-[#5d5d6b] block mb-1">
+                <span className="text-[11px] font-mono font-bold text-[#f03c4f] block mb-1">
                   EXECUTIVE LEADERSHIP
                 </span>
                 <p className="text-sm font-bold text-[#20222b]">

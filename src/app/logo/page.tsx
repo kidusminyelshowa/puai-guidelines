@@ -331,7 +331,7 @@ export default function LogoPage() {
               <div className="group rounded-3xl overflow-hidden bg-white border border-black/10">
                 <div className="aspect-[16/10] overflow-hidden bg-[#20222b] relative">
                   <img
-                    src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1000&q=80"
+                    src="/assets/images/puai-collab-authentic.jpg"
                     alt="Office Signage Context"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
@@ -362,9 +362,9 @@ export default function LogoPage() {
               <div className="group rounded-3xl overflow-hidden bg-white border border-black/10">
                 <div className="aspect-[16/10] overflow-hidden bg-[#ffebee] relative">
                   <img
-                    src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1000&q=80"
+                    src="/assets/images/puai-human-texture.jpg"
                     alt="Digital Badge & Lanyard"
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
                   />
                   <div className="absolute bottom-6 left-6 right-6">
                     <div className="bg-[#20222b]/90 backdrop-blur-md p-5 rounded-2xl text-white flex items-center justify-between">
