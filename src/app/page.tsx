@@ -61,19 +61,24 @@ const sections = [
     title: "Imagery",
     subtitle: "Brand in Use & Art Direction",
     description:
-      "Principles for authentic visual storytelling: candid African collaboration, raw human texture, natural light, and practical tools.",
+      "Principles for authentic visual storytelling: raw human macro texture, intense focus, candid African collaboration, and practical tools.",
     href: "/imagery",
     badge: "Photo Kit",
     preview: (
-      <div className="w-full h-full relative overflow-hidden group-hover:scale-105 transition-transform duration-500">
+      <div className="w-full h-full relative overflow-hidden group-hover:scale-105 transition-transform duration-500 grid grid-cols-2 gap-0.5 bg-[#20222b]">
+        <img
+          src="/assets/images/puai-warm-portrait-gaze.jpg"
+          alt="Macro Human Gaze"
+          className="w-full h-full object-cover"
+        />
         <img
           src="/assets/images/puai-collab-authentic.jpg"
           alt="PUAI Team Collaboration in Nairobi"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-4">
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex items-end p-4">
           <span className="text-white text-xs font-mono uppercase tracking-wider">
-            Brand in Use / Grounded
+            Macro Texture & Candid Work
           </span>
         </div>
       </div>
@@ -286,17 +291,17 @@ export default function Home() {
             <div className="rounded-2xl overflow-hidden border border-black/10 bg-white group shadow-sm hover:shadow-md transition-shadow">
               <div className="aspect-[4/3] overflow-hidden bg-black/5">
                 <img
-                  src="/assets/images/puai-collab-authentic.jpg"
-                  alt="Team Workshop Collaboration"
+                  src="/assets/images/puai-warm-portrait-gaze.jpg"
+                  alt="Macro Human Texture and Discernment"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
               <div className="p-5">
                 <span className="text-[11px] font-mono font-bold text-[#f03c4f] block mb-1">
-                  WORKSHOPS & ACTIVE DIALOGUE
+                  RAW HUMAN TEXTURE & DISCERNMENT
                 </span>
                 <p className="text-sm font-bold text-[#20222b]">
-                  Interactive AI Masterclasses for Executive Teams
+                  Human Intuition, Oversight, and Critical Thinking in AI
                 </p>
               </div>
             </div>
@@ -306,17 +311,17 @@ export default function Home() {
             <div className="rounded-2xl overflow-hidden border border-black/10 bg-white group shadow-sm hover:shadow-md transition-shadow">
               <div className="aspect-[4/3] overflow-hidden bg-black/5">
                 <img
-                  src="/assets/images/puai-human-texture.jpg"
-                  alt="Macro Human Texture and Discernment"
-                  className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                  src="/assets/images/puai-collab-authentic.jpg"
+                  alt="Team Workshop Collaboration in Nairobi"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
               <div className="p-5">
                 <span className="text-[11px] font-mono font-bold text-[#f03c4f] block mb-1">
-                  RAW HUMAN TEXTURE & FOCUS
+                  CANDID AFRICAN COLLABORATION
                 </span>
                 <p className="text-sm font-bold text-[#20222b]">
-                  Human Discernment, Intuition, and Critical Thinking in AI
+                  Interactive AI Masterclasses & Sprints for Executive Teams
                 </p>
               </div>
             </div>
@@ -326,17 +331,17 @@ export default function Home() {
             <div className="rounded-2xl overflow-hidden border border-black/10 bg-white group shadow-sm hover:shadow-md transition-shadow">
               <div className="aspect-[4/3] overflow-hidden bg-black/5">
                 <img
-                  src="/assets/images/puai-focus-portrait.jpg"
-                  alt="Executive Leadership and Strategy"
+                  src="/assets/images/puai-macro-eye-focus.jpg"
+                  alt="Active Cognition & Deep Focus"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
               <div className="p-5">
                 <span className="text-[11px] font-mono font-bold text-[#f03c4f] block mb-1">
-                  EXECUTIVE LEADERSHIP
+                  COGNITIVE FOCUS & OVERSIGHT
                 </span>
                 <p className="text-sm font-bold text-[#20222b]">
-                  Removing Human Barriers to Real AI Return on Investment
+                  Developing Prompt Strategy and Verifiable Real-World ROI
                 </p>
               </div>
             </div>

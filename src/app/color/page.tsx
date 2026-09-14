@@ -104,33 +104,33 @@ const colorPairings = [
     colorName: "PUAI Coral",
     hex: "#f03c4f",
     description:
-      "Expresses passion, forward movement, and bold executive action. Paired with candid collaborative photography.",
-    photoUrl: "/assets/images/puai-collab-authentic.jpg",
-    theme: "Executive Strategy & Action",
+      "Expresses passion, forward movement, and bold human energy. Paired with warm, intimate macro portraits.",
+    photoUrl: "/assets/images/puai-warm-portrait-gaze.jpg",
+    theme: "Human Energy & Executive Vision",
   },
   {
     colorName: "Midnight Navy",
     hex: "#143d73",
     description:
-      "Grounds technical discipline, trust, and human oversight. Paired with raw human texture and deep focus portraits.",
-    photoUrl: "/assets/images/puai-human-texture.jpg",
-    theme: "Technical Discipline & Human Discernment",
+      "Grounds technical discipline, trust, and deep cognition. Paired with intense macro eye focus against rich studio tones.",
+    photoUrl: "/assets/images/puai-macro-eye-focus.jpg",
+    theme: "Technical Discipline & Cognitive Focus",
   },
   {
     colorName: "Marigold Yellow",
     hex: "#f5c814",
     description:
-      "Evokes optimism, clarity of thought, and breakthrough moments during intensive team workshops.",
-    photoUrl: "/assets/images/puai-studio-sprint.jpg",
+      "Evokes optimism, clarity of thought, and breakthrough moments during intensive team collaboration.",
+    photoUrl: "/assets/images/puai-collab-authentic.jpg",
     theme: "Ideation & Breakthroughs",
   },
   {
     colorName: "Neo-Mint",
     hex: "#4fedaa",
     description:
-      "Signifies iterative progress, verifiable business metrics, and human-led technological adoption.",
-    photoUrl: "/assets/images/puai-focus-portrait.jpg",
-    theme: "Adoption & Continuous Growth",
+      "Signifies iterative progress, verifiable business metrics, and raw organic human texture.",
+    photoUrl: "/assets/images/puai-human-texture.jpg",
+    theme: "Adoption & Organic Reality",
   },
 ];
 
