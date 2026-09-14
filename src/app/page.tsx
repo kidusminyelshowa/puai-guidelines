@@ -94,22 +94,34 @@ const brandInUseCards = [
     description: "Business cards, correspondence sheets, and branded notebooks.",
   },
   {
-    title: "Human Discernment in AI",
-    category: "RAW HUMAN TEXTURE",
-    image: "/assets/images/puai-warm-portrait-gaze.jpg",
-    description: "Close-up macro photography capturing critical thought and real emotion.",
-  },
-  {
-    title: "Executive Masterclasses",
-    category: "CANDID COLLABORATION",
-    image: "/assets/images/puai-collab-authentic.jpg",
-    description: "Unscripted team sprints solving operational challenges in Nairobi.",
-  },
-  {
     title: "Tote Bag & Summit Merch",
     category: "MERCHANDISE & EVENTS",
     image: "/assets/in-use/Tote Bag Mockup.jpg",
     description: "Screen-printed cotton tote bag for workshops and brand events.",
+  },
+  {
+    title: "Identity System Framework",
+    category: "SYSTEM OVERVIEW",
+    image: "/assets/in-use/Artboard 9.jpg",
+    description: "Brand identity architecture and visual balance.",
+  },
+  {
+    title: "Editorial Collateral",
+    category: "PRINT DESIGN",
+    image: "/assets/in-use/01.jpg",
+    description: "Course booklets, masterclass materials, and executive folders.",
+  },
+  {
+    title: "Spatial & Hardware Display",
+    category: "ENVIRONMENTAL",
+    image: "/assets/in-use/2.jpg",
+    description: "Brand presence across hardware and workshop environments.",
+  },
+  {
+    title: "Raw Macro Human Texture",
+    category: "PHOTOGRAPHY",
+    image: "/assets/images/puai-warm-portrait-gaze.jpg",
+    description: "Unfiltered human focus and critical discernment in AI workflows.",
   },
 ];
 
@@ -291,7 +303,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Brand in Practice Showcase */}
+      {/* Brand in Practice Showcase (Using all in-use images) */}
       <section className="py-16 sm:py-24 px-6 sm:px-10 max-w-7xl mx-auto">
         <ScrollReveal>
           <div className="text-center max-w-2xl mx-auto mb-12">
@@ -302,16 +314,16 @@ export default function Home() {
               The Brand in Practice
             </h3>
             <p className="text-sm text-[#5d5d6b]">
-              Consistent visual voice across collateral, digital platforms, merchandise, and workshop settings.
+              Real-world application across print collateral, merchandise, identity frameworks, and environments.
             </p>
           </div>
         </ScrollReveal>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {brandInUseCards.map((card, idx) => (
-            <ScrollReveal key={idx} delay={idx * 0.1}>
+            <ScrollReveal key={idx} delay={idx * 0.08}>
               <div className="rounded-2xl overflow-hidden border border-black/10 bg-white group shadow-sm hover:shadow-md transition-shadow flex flex-col h-full">
-                <div className="aspect-[4/3] overflow-hidden bg-black/5 relative">
+                <div className="aspect-[16/11] overflow-hidden bg-black/5 relative">
                   <img
                     src={card.image}
                     alt={card.title}

@@ -73,13 +73,19 @@ const inUseMockups = [
     title: "Stationery & Desk Suite",
     category: "Print & Collateral",
     image: "/assets/in-use/Desk-Brand-Identity-Stationery-Free-psd-Mockup-Recovered.jpg",
-    description: "Business cards, correspondence sheets, and notebooks.",
+    description: "Business cards, correspondence sheets, and branded notebooks.",
   },
   {
     title: "Tote Bag & Merchandise",
     category: "Apparel & Events",
     image: "/assets/in-use/Tote Bag Mockup.jpg",
     description: "Screen-printed natural cotton tote bag for summits and workshops.",
+  },
+  {
+    title: "Brand Identity Framework",
+    category: "System Overview",
+    image: "/assets/in-use/Artboard 9.jpg",
+    description: "Comprehensive visual identity framework and mark system.",
   },
   {
     title: "Editorial & Publication",
@@ -338,7 +344,7 @@ export default function LogoPage() {
         </ScrollReveal>
       </section>
 
-      {/* Brand in Use / In-Use Mockups Section */}
+      {/* Brand in Use / In-Use Mockups Section (All 5 in-use images) */}
       <section className="py-16 sm:py-24 px-6 sm:px-10 bg-[#fafafa] border-t border-black/5">
         <div className="max-w-7xl mx-auto">
           <ScrollReveal>
@@ -355,9 +361,9 @@ export default function LogoPage() {
             </div>
           </ScrollReveal>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {inUseMockups.map((item, idx) => (
-              <ScrollReveal key={idx} delay={idx * 0.1}>
+              <ScrollReveal key={idx} delay={idx * 0.08}>
                 <div className="group rounded-3xl overflow-hidden bg-white border border-black/10 shadow-sm hover:shadow-md transition-shadow flex flex-col h-full">
                   <div className="aspect-[16/10] overflow-hidden bg-[#20222b] relative">
                     <img
@@ -366,14 +372,16 @@ export default function LogoPage() {
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
                   </div>
-                  <div className="p-6">
-                    <span className="text-xs font-bold uppercase tracking-wider text-[#f03c4f] block mb-1">
-                      {item.category}
-                    </span>
-                    <h4 className="text-lg font-bold text-[#20222b] mb-1">
-                      {item.title}
-                    </h4>
-                    <p className="text-xs text-[#5d5d6b] leading-relaxed">
+                  <div className="p-6 flex-1 flex flex-col justify-between">
+                    <div>
+                      <span className="text-xs font-bold uppercase tracking-wider text-[#f03c4f] block mb-1">
+                        {item.category}
+                      </span>
+                      <h4 className="text-base font-bold text-[#20222b] mb-1">
+                        {item.title}
+                      </h4>
+                    </div>
+                    <p className="text-xs text-[#5d5d6b] leading-relaxed mt-2">
                       {item.description}
                     </p>
                   </div>
